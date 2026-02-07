@@ -1,0 +1,142 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    place-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 0.5px solid var(--navbar-border);
+    
+    background-color: var(--navbar-bg);
+    color: var(--text-color);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.logo-container span {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.search-bar {
+    justify-self: center;
+    width: 100%;
+    max-width: 500px;
+    height: 20px;
+
+    padding: 10px 16px;
+    font-size: 14px;
+
+    border: none;
+    border-radius: 100px;
+
+    background-color: var(--search-bg);
+    color: var(--text-color);
+
+    outline: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.search-bar::placeholder {
+    color: var(--search-placeholder);
+}
+
+.search-bar:focus {
+    border: 2px solid #0079d3;
+}
+
+.navbar-button {
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    max-width: 150px;
+    padding: 10px 20px;
+
+    color: var(--button-text);
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navbar-buttons span{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 890px) {
+    .navbar {
+        grid-template-columns: 1fr 3fr 1fr;
+        height: 50px;
+        padding: 0 5px;
+    }
+
+    .logo-container span {
+        font-size: large;
+    }
+
+    .search-bar {
+        max-width: 250px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .navbar-buttons {
+        gap: 5px;
+    }
+
+    .navbar-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        grid-template-columns: 1fr 4fr 0.2fr;
+    }
+
+    .search-bar {
+        max-width: 120px;
+        padding: 8px 12px;
+    }
+
+    .navbar-buttons {
+        justify-self: end;
+        padding-right: 0;
+    }
+}
