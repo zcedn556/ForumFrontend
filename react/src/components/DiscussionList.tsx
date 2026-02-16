@@ -6,7 +6,6 @@ export default function DiscussionList({ discussions }: DiscussionListProps) {
   return (
     <>
       {discussions.map((item) => (
-        <>
         <div key={`${item.userId}-${item.creationDate.getTime()}`} className="discussion-list">
           <Discussion
             theme={item.theme}
@@ -17,7 +16,6 @@ export default function DiscussionList({ discussions }: DiscussionListProps) {
             communityId={item.communityId}
           />
         </div>
-        </>
       ))}
     </>
   );

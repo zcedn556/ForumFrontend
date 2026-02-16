@@ -15,7 +15,7 @@ function App() {
       description: '',
       creationDate: new Date,
       imageUrl: 'https://i.redd.it/rc9p074ytrjg1.png',
-      userId: 4343,
+      userId: 6574,
       communityId:2
     },
     {
@@ -30,14 +30,14 @@ function App() {
       description: 'Exclusive interview with Obama',
       creationDate: new Date,
       imageUrl: 'https://www.azernews.az/media/2026/02/16/a9195c3171f4.jpg',
-      userId: 2025,
+      userId: 9374,
       communityId: 4
     },
     { theme: 'Trump\'s First Amendment is officially dead',
       description: '',
       creationDate: new Date,
       imageUrl: 'https://preview.redd.it/trumps-first-amendment-is-officially-dead-v0-1u5u6pf9lujg1.jpeg?width=1080&crop=smart&auto=webp&s=2e7ff49ce85f92253d5595a74edbf530d005232a',
-      userId: 4343,
+      userId: 1235,
       communityId: 5
     }
   ];
