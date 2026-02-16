@@ -1,0 +1,40 @@
+.discussion-item {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  align-items: start;
+  padding: 12px;
+  border-radius: 24px;
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+
+  max-width: 800px;
+}
+
+.discussion-item:hover {
+  background-color: var(--discussion-bg);
+  cursor: pointer;
+}
+
+.discussion-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.discussion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discussion-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+.discussion-creator-info {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
