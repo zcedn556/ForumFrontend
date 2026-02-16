@@ -8,6 +8,7 @@
   --button-bg: seagreen;
   --button-bg-hover: #2e8b57;
   --button-text: #ffffff;
+  --discussion-bg: rgba(175, 180, 180, 0.665);
   
   --body-bg: var(--navbar-bg);
 }
@@ -21,6 +22,7 @@ body.dark-mode {
   --button-bg: seagreen;
   --button-bg-hover: #2e8b57;
   --button-text: #ffffff;
+  --discussion-bg: rgba(30, 37, 41, 0.665);
   
   --body-bg: var(--navbar-bg);
 }
