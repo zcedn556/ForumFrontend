@@ -71,9 +71,11 @@ function App() {
         <div className="discussion-list">
           <DiscussionList discussions={discussions} />
         </div>
-        <div className="community-list">
+        <div className='community-list-wrapper'>
           <div className='community-banner'><h3>Communities</h3></div>
-          <CommunityList communities={communities} />
+          <div className="community-list">
+            <CommunityList communities={communities} />
+          </div>
         </div>
       </div>
     </>

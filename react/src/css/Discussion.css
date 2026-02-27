@@ -2,12 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 120px;
   align-items: start;
-  padding: 12px;
+  padding: 12px 20px;
   border-radius: 24px;
   color: var(--text-color);
   transition: background-color 0.2s ease;
 
-  max-width: 1000px;
+  width: 50vw;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .discussion-item:hover {

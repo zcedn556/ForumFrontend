@@ -3,6 +3,7 @@
     color: var(--text-color);
     padding: 12px;
     margin: 10px 10px 0 10px;
+    font-size: small;
 }
 
 .community-item:hover{
