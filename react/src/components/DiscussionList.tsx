@@ -6,7 +6,7 @@ export default function DiscussionList({ discussions }: DiscussionListProps) {
   return (
     <>
       {discussions.map((item) => (
-        <div key={`${item.userId}-${item.creationDate.getTime()}`} className="discussion-list">
+        <div key={`${item.userId}-${item.creationDate.getTime()}`}>
           <Discussion
             theme={item.theme}
             description={item.description}

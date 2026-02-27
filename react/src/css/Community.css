@@ -1,0 +1,11 @@
+.community-item{
+    border-radius: 24px;
+    color: var(--text-color);
+    padding: 12px;
+    margin: 10px 10px 0 10px;
+}
+
+.community-item:hover{
+    background-color: var(--discussion-bg);
+    cursor: pointer;
+}
