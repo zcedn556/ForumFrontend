@@ -1,0 +1,25 @@
+.community-list{
+    font-size: medium;
+    overflow-y: auto;
+    gap: 10px;
+    
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.community-list::-webkit-scrollbar {
+  display: none;
+}
+
+.community-banner{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.community-list-wrapper{
+    background-color: var(--community-list-bg);
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
