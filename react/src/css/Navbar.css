@@ -19,12 +19,14 @@
     align-items: center;
     height: 100%;
     padding-left: 20px;
+    user-select: none;
 }
 
 .logo-container span {
     font-size: x-large;
     font-weight: bold;
     margin-left: 10px;
+    color: var(--text-color);
 }
 
 .logo {
@@ -91,6 +93,10 @@
 
 .navbar-buttons span{
     margin-left: 10px;
+}
+
+.auth-link{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 890px) {
