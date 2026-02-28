@@ -7,6 +7,9 @@ import type DiscussionProps from './components/interfaces/DiscussionProps'
 import CommunityList from './components/CommunityList'
 import type CommunityProps from './components/interfaces/CommunityProps'
 import type CommunityDto from './components/interfaces/CommunityDto'
+import AuthForm from './components/Auth/AuthForm'
+import { Route, Routes } from 'react-router-dom'
+import Dashboard from './components/Dashboard'
 
 
 const API_BASE = 'http://127.0.0.1:8000/api'
@@ -66,18 +69,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <div className='main-container'>
-        <div className="discussion-list">
-          <DiscussionList discussions={discussions} />
-        </div>
-        <div className='community-list-wrapper'>
-          <div className='community-banner'><h3>Communities</h3></div>
-          <div className="community-list">
-            <CommunityList communities={communities} />
-          </div>
-        </div>
-      </div>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Dashboard discussions={discussions} communities={communities} />}/>
+      </Routes>
     </>
   )
 }
