@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import DiscussionList from './components/DiscussionList'
 import Navbar from './partials/Navbar'
 import type DiscussionDto from './components/interfaces/DiscussionDto'
 import type DiscussionProps from './components/interfaces/DiscussionProps'
-import CommunityList from './components/CommunityList'
 import type CommunityProps from './components/interfaces/CommunityProps'
 import type CommunityDto from './components/interfaces/CommunityDto'
-import AuthForm from './components/Auth/AuthForm'
 import { Route, Routes } from 'react-router-dom'
 import Dashboard from './components/Dashboard'
 
