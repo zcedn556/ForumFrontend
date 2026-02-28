@@ -20,7 +20,6 @@ const AuthForm: React.FC = () => {
     setForm(prev => ({ ...prev, [name]: value }));
   };
 
-  // Використовуємо React.FormEventHandler для сучасного TS-підходу
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
