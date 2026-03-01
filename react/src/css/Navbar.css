@@ -63,7 +63,8 @@
 .navbar-button {
     align-items: center;
     justify-content: center;
-
+    transition: all .3s ease-in-out;
+    
     height: 40px;
     max-width: 150px;
     padding: 10px 20px;
@@ -95,7 +96,7 @@
     margin-left: 10px;
 }
 
-.auth-link{
+.logo-link{
     text-decoration: none;
 }
 

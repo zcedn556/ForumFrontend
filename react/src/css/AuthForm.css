@@ -22,17 +22,30 @@
   font-size: 14px;
 }
 
-.auth-form button {
+.auth-form button { 
   padding: 10px;
   background: var(--button-bg);
+  transition: all .3s ease-in-out;
   border: none;
   color: #fff;
   cursor: pointer;
 }
 
+.auth-form button:hover{
+  background-color: var(--button-bg-hover);
+}
+
 .auth-link {
-  color: blue;
+  color: #4da6ff;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.auth-link:hover{
+  color: #53a7fb;
+  text-shadow: 0 0 8px #5aa6dd,
+               0 0 10px #4da6ff,
+               0 0 25px #1e90ff;
 }
 
 .auth-switch {

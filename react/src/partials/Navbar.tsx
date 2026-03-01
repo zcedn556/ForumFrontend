@@ -5,7 +5,7 @@ import ThemeToggler from "../components/ThemeToggler"
 export default function Navbar() {
     return(
         <div className="navbar">
-            <Link className="auth-link" to="/">
+            <Link className="logo-link" to="/">
                 <div className="logo-container">
                     <img className="logo" src="/logo.svg"/>
                     <span>Chatter</span>
