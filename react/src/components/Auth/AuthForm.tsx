@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../css/AuthForm.css";
+import { useNavigate } from "react-router-dom";
 
 type FormState = {
   name: string;
@@ -8,6 +9,7 @@ type FormState = {
 };
 
 const AuthForm: React.FC = () => {
+  const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
   const [form, setForm] = useState<FormState>({
     name: "",
@@ -24,12 +26,11 @@ const AuthForm: React.FC = () => {
     e.preventDefault();
 
     if (isLogin) {
-      console.log("Login data:", {
-        email: form.email,
-        password: form.password,
-      });
+      console.log("Login data:", { email: form.email, password: form.password});
+      navigate("/");
     } else {
       console.log("Register data:", form);
+      setIsLogin(true);
     }
   };
 
@@ -73,8 +74,7 @@ const AuthForm: React.FC = () => {
           {isLogin ? "No account?" : "Already have an account?"}{" "}
           <span
             onClick={() => setIsLogin(prev => !prev)}
-            className="auth-link"
-          >
+            className="auth-link">
             {isLogin ? "Register" : "Login"}
           </span>
         </p>
