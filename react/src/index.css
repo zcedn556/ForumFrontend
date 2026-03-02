@@ -6,11 +6,13 @@
   --search-bg: #e5ebee;
   --search-placeholder: #7c7c7c;
   --button-bg: seagreen;
-  --button-bg-hover: #2e8b57;
+  --button-bg-hover: #359d62;
   --button-text: #ffffff;
   --discussion-bg: rgba(175, 180, 180, 0.665);
   --community-list-bg: var(--search-bg);
   --body-bg: var(--navbar-bg);
+  
+  --auth-form-bg: #F1F3F5;
 }
 
 body.dark-mode {
@@ -20,11 +22,12 @@ body.dark-mode {
   --search-bg: #2a3236;
   --search-placeholder: #7c7c7c;
   --button-bg: seagreen;
-  --button-bg-hover: #2e8b57;
   --button-text: #ffffff;
   --discussion-bg: rgba(30, 37, 41, 0.665);
   --community-list-bg: black;
   --body-bg: var(--navbar-bg);
+
+  --auth-form-bg: var(--search-bg) ;
 }
 
 
