@@ -8,6 +8,7 @@ import type CommunityDto from './components/interfaces/CommunityDto'
 import { Route, Routes } from 'react-router-dom'
 import Dashboard from './components/Dashboard'
 import AuthForm from './components/Auth/AuthForm'
+import NotFound from './pages/NotFound'
 
 
 const API_BASE = 'http://127.0.0.1:8000/api'
@@ -71,6 +72,7 @@ function App() {
       <Routes>
         <Route path='/auth' element={<AuthForm />} />
         <Route path="/" element={<Dashboard discussions={discussions} communities={communities} />}/>
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </>
   )
