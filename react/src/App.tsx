@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard'
 import AuthForm from './components/Auth/AuthForm'
 import NotFound from './pages/NotFound'
 import DiscussionPage from './pages/DiscussionPage'
+import ProfilePage from './pages/ProfilePage'
 
 
 const API_URL = import.meta.env.VITE_API_URL
@@ -72,8 +73,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/auth' element={<AuthForm />} />
-        <Route path="/" element={<Dashboard discussions={discussions} communities={communities} />}/>
-        <Route path="/discussions/:id" element={<DiscussionPage />} />
+        <Route path='/' element={<Dashboard discussions={discussions} communities={communities} />}/>
+        <Route path='/discussions/:id' element={<DiscussionPage />} />
+        <Route path='profile' element={<ProfilePage />}/>
         <Route path='*' element={<NotFound />} />
       </Routes>
     </>
