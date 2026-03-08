@@ -9,9 +9,10 @@ import { Route, Routes } from 'react-router-dom'
 import Dashboard from './components/Dashboard'
 import AuthForm from './components/Auth/AuthForm'
 import NotFound from './pages/NotFound'
+import DiscussionPage from './pages/DiscussionPage'
 
 
-const API_BASE = 'http://127.0.0.1:8000/api'
+const API_URL = import.meta.env.VITE_API_URL
 
 function App() {
   const [discussions, setDiscussions] = useState<DiscussionProps[]>([])
@@ -24,8 +25,8 @@ function App() {
     const fetchData = async () => {
       try {
         const [discussionsRes, communitiesRes] = await Promise.all([
-          fetch(`${API_BASE}/discussions/`),
-          fetch(`${API_BASE}/communities/`)
+          fetch(`${API_URL}/discussions/`),
+          fetch(`${API_URL}/communities/`)
         ])
 
         if (!discussionsRes.ok) {
@@ -72,6 +73,7 @@ function App() {
       <Routes>
         <Route path='/auth' element={<AuthForm />} />
         <Route path="/" element={<Dashboard discussions={discussions} communities={communities} />}/>
+        <Route path="/discussions/:id" element={<DiscussionPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </>

@@ -1,4 +1,5 @@
 export default interface DiscussionDto {
+  readonly id: number
   theme: string
   description: string
   creationDate: string
