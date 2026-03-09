@@ -1,0 +1,49 @@
+.discussion-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  color: var(--text-color);
+}
+
+.discussion-card {
+  max-width: 900px;
+  width: 100%;
+  background: var(--auth-form-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.discussion-image {
+  padding: 20px;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+
+.discussion-content {
+  padding: 30px;
+}
+
+.discussion-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.discussion-meta {
+  font-size: 14px;
+  
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.discussion-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 60px;
+}

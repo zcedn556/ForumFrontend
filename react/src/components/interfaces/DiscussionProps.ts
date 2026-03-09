@@ -1,4 +1,5 @@
 export default interface DiscussionProps{
+    readonly id: number;
     theme: string;
     description: string;
     creationDate: Date
